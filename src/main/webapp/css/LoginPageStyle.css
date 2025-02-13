@@ -1,0 +1,143 @@
+
+	body
+	{
+		background-image: url('images/watercolor-paint-background-holi-festival.jpg');
+   /* background-image: linear-gradient(to right, orange, yellow,orange,yellow,orange);*/
+		
+	}
+      .input-icons {
+            width: 100%;
+           margin-bottom: 10px;
+           
+        }
+        
+        .icon {
+            padding: 8px;
+            min-width: 80px;
+            margin-top: 18px;
+        }
+        .input-icons i {
+            position: absolute;
+        }
+         .input-field {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+    
+    .input-icon {
+            width: 100%;
+           margin: 10px;
+           font-size: 60px;
+           
+        }
+
+	input[type=text], select {
+  width: 70%;
+  padding: 12px 50px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+ 
+  font-size:15px }
+
+
+input[type=submit], select {
+  width: 50%;
+  padding: 10px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  /*background-color: orange;*/
+  
+  font-size: 22px;
+  }
+  input[type=email], select {
+  width: 70%;
+  padding: 12px 50px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size:15px }
+
+  input[type=password], select {
+  width: 70%;
+  padding: 12px 50px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size:15px }
+
+
+
+input[type=text]::placeholder {
+  text-align: center;
+  }
+  input[type=email]::placeholder {
+  text-align: center;
+  }
+  input[type=password]::placeholder {
+  text-align: center;
+  }
+  .login
+{
+border-radius: 25px;
+text-align: center;
+/*background-color:white;*/
+border: 1px ;
+margin: 80px 430px 100px;
+width: 500px;
+float:center;
+padding: 5px;
+}
+
+.Registration
+{
+
+text-align: center;
+/*background-color:whitb*/
+border: 5px ;
+margin: 50px 350px 100px;
+width: 750px;
+float:center;
+padding: 5px;
+}
+h1{
+  color:black;
+}
+p{
+  color: white;
+}
+
+a{
+  color: red;
+  font-size: 18px;
+}
+a:hover{
+  color: green;
+}
+
+.admin
+{
+border-radius: 25px;
+text-align: center;
+/*background-color:white;*/
+border: 1px ;
+margin: 80px 430px 100px;
+width: 500px;
+float:center;
+padding: 5px;
+}
+h1{
+  background-color: orange;
+  text-shadow: 2px 2px 5px;
+  border-radius: 25px;
+}
+
+
+
+

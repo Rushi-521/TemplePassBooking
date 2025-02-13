@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<h lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dharma Reservation</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchForm = document.querySelector('form');
+            const templeNames = document.querySelectorAll('h1 b');
+
+            searchForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const searchTerm = event.target.querySelector('input').value.toLowerCase();
+
+                templeNames.forEach(function (templeName, index) {
+                    const templeNameText = templeName.innerText.toLowerCase();
+                    const templeContainer = templeName.closest('.container');
+                    const templeWrapper = templeContainer.closest('.container-wrapper');
+
+                    if (templeNameText.includes(searchTerm)) {
+                        templeWrapper.style.display = 'block';
+                    } else {
+                        templeWrapper.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+ 
+     
+
+    <header>
+        <div class="input-box1">
+           
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">AboutUs</a></li>
+                    <li><a href="contact.html#">ContactUs</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="box">
+            <h1>Dharma Reservation</h1>
+        </div>
+</header>
+   
+
+    <div class="search-container">
+        <form>
+            <input type="text" placeholder="Search" style="width: 700px;">&nbsp;&nbsp;
+            <button class="rounded-button">Search</button>
+        </form>
+    </div>
+
+    <div class="container-wrapper">
+        <div class="container">
+            <h1><b>Shirdi</b></h1>
+            <div class="image">
+                <img src="images/shirdi.jpg" alt="Temple Image" width="850" height="500">
+            </div>
+
+            <div class="info-section">
+                <h2>Address</h2>
+                <p>Temple Complex Address - Mauli Nagar, <br> Shirdi, Maharashtra 423109, India.<br> Temple Trust Address -
+                    Shirdi, <br> Rahata, Ahmednagar, Maharashtra India.</p>
+            </div>
+
+            <div class="info-section">
+                <h2>Open-Close-time</h2>
+                <p>Monday - Sunday: 6:00 AM - 9:30 PM<br> Sunday: 6:00 AM - 9:30 PM</p>
+            </div>
+
+            <div class="info-section">
+                <h2>About</h2>
+                <p>Today, because of Sai Baba, Shirdi has become a place of importance in India and is counted among the major
+                    Hindu places of pilgrimage. The First Sai Baba temple is situated at Kudal, Sindhdurg. This temple was
+                    built in 1922. The Sai Baba Temple in Shirdi is visited by an average of 25,000 pilgrims a day.</p>
+            </div>
+
+            <div class="btn-container">
+                 <button  class="rounded-button"><a  href="Donation.jsp"> Donation</a></button>
+                   <button class="rounded-button"><a  href="Bookdarshan.jsp">BookDarshan </a></button>
+            </div>
+        </div>
+    </div>
+ <div  class="container-wrapper">
+
+    <div class="container">
+   
+        <h1><b>MohataDevi</b></h1>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        <div class-container="image">
+        <img src="images/mohata.jpg" alt="Temple Image" width="800" height="500">
+        </div>
+        
+        <div class="info-section">
+        <h2>Address</h2>
+            <p>Mohata Devi Temple Road, <br>
+            Mohate, Ahmednagar - 414102 (Near Pathardi)
+            </p>
+        </div>
+
+        <div class="info-section">
+           <h2>Open-Close-time</h2>
+           <p>Monday - Sunday: 24Hr<br></p>
+            
+        </div>
+          
+          <div class="info-section">
+            <h2>About</h2>
+            <p>Mohatadevi is a small Village/hamlet in Pathardi Taluka in Ahmednagar District of Maharashtra State, India.
+                 It comes under Mohote Panchayath.
+            </p>
+        </div>
+            
+        <div class="btn-container">
+            <form>
+                <button  class="rounded-button"><a  href="Donation.jsp"> Donation</a></button>
+                   <button class="rounded-button"><a  href="Bookdarshan.jsp">BookDarshan </a></button>
+           </div>
+       </div>
+    </div>    
+
+</div>
+    <div class="container-wrapper">
+
+        <div class="container">
+       
+            <h1><b>Pandharpur</b></h1>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <div class-container="image">
+            <img src="images/Pandhrpur.jpeg" alt="Temple Image" width="800" height="500">
+            </div>
+            
+            <div class="info-section">
+            <h2>Address</h2>
+                <p>Pandharpur-413304.District-Solapur 
+                    State-Maharastra, <br>
+             </p>
+            </div>
+    
+            <div class="info-section">
+               <h2>Open-Close-time</h2>
+               <p>Monday-Sunday:6am-10pm<br></p>
+                
+            </div>
+              
+              <div class="info-section">
+                <h2>About</h2>
+                <p>PANDHRPUR - This is a holy place of Shri Vitthal and Shri Rukhmini.It is also knows s the Southern Kashi of india 
+                    and Kulsaivat of Maharastra State.
+                </p>
+            </div>
+                
+            <div class="btn-container">
+                <form>
+					
+                   <button  class="rounded-button"><a  href="Donation.jsp"> Donation</a></button>
+                   <button class="rounded-button"><a href="Bookdarshan.jsp">BookDarshan </a></button>
+               </div>
+           </div>
+        </div>  
+</div>
+        <div class="container-wrapper">
+
+            <div class="container">
+           
+                <h1><b>Shegaon</b></h1>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                <div class-container="image">
+                <img src="images/Shegaon.jpg" alt="Temple Image" width="800" height="500">
+                </div>
+                
+                <div class="info-section">
+                <h2>Address</h2>
+                    <p>Shri Gajanan Maharaj Sanstan,Shegaon<br>
+                        Tq:Shegaon-444203 Dist:Buldhana
+                 </p>
+                </div>
+        
+                <div class="info-section">
+                   <h2>Open-Close-time</h2>
+                   <p>Monday-Sunday:6am-10pm<br></p>
+                    
+                </div>
+                  
+                  <div class="info-section">
+                    <h2>About</h2>
+                    <p>
+                        
+                        Shegaon has become a pilgrimage centre due to the influence of Shri Sant Gajanan Maharaj, who is considered a saint by Hindus.</p>
+                    
+                </div>
+                    
+                <div class="btn-container">
+                    <form>
+                        <button  class="rounded-button"><a  href="Donation.jsp"> Donation</a></button>
+                   <button class="rounded-button"><a  href="Bookdarshan.jsp">BookDarshan </a></button>
+                   </div>
+               </div>
+            </div>
+            
+
+        <div class="container-wrapper">
+
+            <div class="container">
+           
+                <h1><b>Ganpatipule</b></h1>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                <div class-container="image">
+                <img src="images/ganpatipule.jpg" alt="Temple Image" width="800" height="500">
+                </div>
+                
+                <div class="info-section">
+                <h2>Address</h2>
+                    <p>Sansthan Shreedev Ganpatipule, <br>Ganpatipule Tal. Dist. Ratnagiri, Maharashtra, India. 
+                        Contact No : 8669931141,<br>
+                 </p>
+                </div>
+        
+                <div class="info-section">
+                   <h2>Open-Close-time</h2>
+                   <p>Monday-Sunday:5am-9pm<br></p>
+                    
+                </div>
+                  
+                  <div class="info-section">
+                    <h2>About</h2>
+                    <p>The Ganpatipudhe temple has Swayambhu murti. Every year thousands of devotees across Maharashtra visit the temple.
+                         The murti is facing West,Ganapatipule town is rich in flora, it have plenty of mangroves and coconut trees. 
+                         The town is governed by the Ganapatipule Grampanchayat.
+                    </p>
+                </div>
+                    
+                <div class="btn-container">
+                    <form>
+                        <button  class="rounded-button"><a  href="Donation.jsp"> Donation</a></button>
+                   <button class="rounded-button"><a  href="Bookdarshan.jsp">BookDarshan </a></button>
+                   </div>
+               </div>
+            </div>
+           
+ </div>   
+</body>
+
+</html>
